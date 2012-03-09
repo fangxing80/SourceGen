@@ -1,0 +1,7 @@
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\bin\SourceGenWebForm.dll
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\bin\SourceGenWebForm.pdb
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\bin\RazorEngine.dll
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\bin\System.Web.Razor.dll
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\obj\Debug\SourceGenWebForm.csprojResolveAssemblyReference.cache
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\obj\Debug\SourceGenWebForm.dll
+E:\Programming\VSProject2010\Web\SourceGenWebForm\SourceGenWebForm\obj\Debug\SourceGenWebForm.pdb

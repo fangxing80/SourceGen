@@ -1,0 +1,4 @@
+﻿@foreach(var x in Enumerable.Range(1,3000))
+{
+  @x.ToString("0000") @(",") @Model.global.name @x @("\r\n")
+}

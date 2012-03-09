@@ -1,0 +1,9 @@
+﻿@("/*<pre>看板</pre>*/")
+@("public class ")@Model.global.name
+@("{")
+@foreach(dynamic x in Model.data)
+{
+  @("    //") @x.fieldcomment @("\r\n") 
+  @("    public ") @x.fieldtype @(" ") @x.fieldname @("{ get; set; };\r\n") 
+}
+@("\r\n}")

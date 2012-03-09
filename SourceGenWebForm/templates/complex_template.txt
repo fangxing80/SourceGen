@@ -1,0 +1,41 @@
+@("/* ==================================================")
+@(" * 顧客名　　: XXXX株式会社")
+@(" * システム名: XXXXXXXXXXXX")
+@(" * ファイル名: ")@Model.global.name@(".java")
+@(" * --------------------------------------------------")
+@(" * 開発環境: JDK1.6.0")
+@(" * --------------------------------------------------")
+@(" * VERSION   DATE       BY        CHANGE/COMMENT")
+@(" *  V1.00    ")@DateTime.Now.ToString("MM-dd-yy")@("   ")@Model.global.author@("     Create")
+@(" * --------------------------------------------------")
+@(" * Copyright (C) 2011 All Rights Reserved.")
+@(" */\r\n")
+@("package")@Model.global.package@("\r\n")
+@("/**")
+@(" * ")
+@(" * クラスの概要<br>")
+@(" * ")
+@(" * <pre>")
+@(" * <b>作成：</b>")
+@(" * ")@DateTime.Now.ToString("yyyy/MM/dd")@(", 所属（作成者）")
+@(" * </pre>")
+@(" *")
+@(" * @author 作成者")
+@(" * @version バージョン")
+@(" */")
+@("public class ")@Upper(Model.global.name)@(" {")
+@foreach(dynamic x in Model.data)
+{
+  @("    /** ") @x.fieldcomment @(" */\r\n") 
+  @("    public ")@x.fieldtype @(" ") @x.fieldname @(";\r\n") 
+}
+@("}")
+@helper Getter(string str) {
+  @string.Format("get{0}{1}", char.ToUpper(str[0]), str.Substring(1))
+}
+@helper Setter(string str) {
+  @string.Format("set{0}{1}", char.ToUpper(str[0]), str.Substring(1))
+}
+@helper Upper(string str) {
+  @string.Format("{0}{1}", char.ToUpper(str[0]), str.Substring(1))
+}
